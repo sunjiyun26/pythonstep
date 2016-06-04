@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*- 
-print 'åœ¨pythonä¸­åªæœ‰ True å’ŒFalse ä¸¤ç§ç±»å‹ å…¶ä»–çš„ä»»ä½• å¤§å°å†™ä¸ç¬¦åˆçš„ å¦‚ true false  TRUE FALSEéƒ½ä¼šç¼–è¯‘æŠ¥é”™'
+print 'boolean.py ÔÚpythonÖĞÖ»ÓĞ True ºÍFalse Á½ÖÖÀàĞÍ ÆäËûµÄÈÎºÎ ´óĞ¡Ğ´²»·ûºÏµÄ Èç true false  TRUE FALSE¶¼»á±àÒë±¨´í'
 print True
 print False
-print 'print TRUE ä¼šæŠ¥é”™'
-print 'print FALSE ä¼šæŠ¥é”™'
-print 'print true ä¼šæŠ¥é”™'
-print 'print false ä¼šæŠ¥é”™'
+print 'print TRUE »á±¨´í'
+print 'print FALSE »á±¨´í'
+print 'print true »á±¨´í'
+print 'print false »á±¨´í'
