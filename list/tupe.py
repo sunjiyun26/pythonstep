@@ -12,3 +12,5 @@ tupeBlank = ()
 print '一个空的tupe 是 tupeBlank = ():',tupeBlank
 tupeOneElement = (1,)
 print '一个空的tupe 是 tupeOneElement = (1,):',tupeOneElement
+
+print '还有没写完的 到底 tupe内部有list 的时候能不能修改呢？'
