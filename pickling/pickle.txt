@@ -1,0 +1,10 @@
+(dp1
+S'age'
+p2
+S'31'
+p3
+sS'name'
+p4
+S'sunjiyun'
+p5
+s.
