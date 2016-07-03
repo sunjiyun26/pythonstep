@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel id="condition" title="Text" style="inside" bodystyle="#ppf.detail.internalpanel.bodystyle#" autoScroll="false" layout="anchor" border="true">
+
+	<!-- 	<textfield id="sunitname" width="long">
+			<label>单位名称</label>
+		</textfield> -->
+		<combobox id="launitname" name="sunitname"   width="long">
+			<label>单位名称2</label>
+			<sql>
+				<![CDATA[SELECT distinct unitname as id,  unitname as name  from bmd_flow_business ]]>
+			</sql>
+			<setAll>true</setAll>
+			<dataFormat>unitname;unitname</dataFormat>
+			<displayField>unitname</displayField>
+			<valueField>unitname</valueField>
+			<submitValue>unitname</submitValue>
+		</combobox>
+		
+	 <combobox id="syear" width="long">
+			<label>年份</label>
+			<sql>
+				<![CDATA[select "2015" as syear ,"2015" as severityname  union select "2016" as syear ,"2016" as severityname  union select "2017" as syear ,"2017" as  severityname union select "2018" as syear  ,"2018" as severityname]]>
+			</sql>
+			<setAll>true</setAll>
+			<dataFormat>syear;severityname</dataFormat>
+			<displayField>severityname</displayField>
+			<valueField>syear</valueField>
+			<submitValue>syear</submitValue>
+		</combobox> 
+	
+</panel>
+
+
+
