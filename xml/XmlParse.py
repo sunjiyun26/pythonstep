@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 # __author__ = 'sunjiyun'
 from xml.parsers.expat import ParserCreate
+from xml.sax import make_parser,_create_parser,parse
 
 
 class DefaultHandler(object):
