@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 __author__ = 'sunjiyun'
-import socket,time
+import socket, time
 
-class SockeHande():
-    def __init__(self,socketClient,address):
+
+class SocketHandler():
+    def __init__(self, socketClient, address):
+        i = 0
         while True:
             data = socketClient.recv(4)
             # sendStr =
@@ -22,3 +24,5 @@ class SockeHande():
                     print i
 
             socketClient.close()
+def test():
+    print "module test"
