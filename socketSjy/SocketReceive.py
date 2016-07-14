@@ -42,14 +42,15 @@ def recv_timeout(the_socket, timeout=2):
     return ''.join(total_data)
 
 
-End = 'something useable as an end marker'
+End = '#'
 
 
 def recv_end(the_socket):
-    total_data = [];
+    total_data = []
     data = ''
     while True:
-        data = the_socket.recv(8192)
+        data = the_socket.recv(1024)
+        print data
         if End in data:
             total_data.append(data[:data.find(End)])
             break

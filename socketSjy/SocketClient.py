@@ -5,21 +5,16 @@ import socket,sys
 # AF_INET6 是 ipv6
 socketsjy = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 socketsjy.connect(("127.0.0.1", 9999))
-socketsjy.send('www.baidu.com')
 bufferSjy = []
 # numcount =  socketsjy.
 while True:
     data = socketsjy.recv(1024)
     print data
-    if len(data) <=0:
-        break
+    if data != "bye":
+        varStr = raw_input()+""
+        socketsjy.send(varStr)
     else:
-        if data != "bye":
-            varStr = raw_input()+""
-            socketsjy.send(varStr)
-
-        else:
-            print "server send me bye"
-            socketsjy.close()
-            sys.exit(None)
+        print "server send me bye"
+        socketsjy.close()
+        sys.exit(None)
 
